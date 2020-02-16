@@ -38,19 +38,26 @@
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+
+      <!-- <AddTodo/> -->
+      <!-- <FilterTodos/> -->
+      <Todos/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Todos from "./components/Todos.vue";
+// import AddTodo from "./components/AddTodo.vue";
+// import FilterTodos from "./components/FilterTodos.vue";
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Todos
+    // AddTodo,
+    // FilterTodos
   },
 
   data: () => ({
