@@ -16,7 +16,8 @@ const actions = {
         commit('setTodos', response.data);
     },
     async addTodo ({ commit }, title){
-        const response = await Axios.post(url, {title, completed: false});
+        console.log(title);
+        const response = await Axios.post(url, { title: title, completed: false });
         commit ('newTodo', response.data)
     },
     async deleteTodo({commit}, id){
@@ -31,8 +32,9 @@ const actions = {
         commit('setTodos', response.data);
       },
       async updateTodo({ commit }, updTodo) {
+        console.log(updTodo);
         const response = await Axios.put(`https://jsonplaceholder.typicode.com/todos/${updTodo.id}`, updTodo);
-        // console.log(response.data);
+        console.log(response.data);
         commit('updateTodo', response.data);
       }
 };
