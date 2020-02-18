@@ -1,4 +1,8 @@
-# todo_mine
+# todo app
+
+Add todos, and delete them.
+
+Aim for this project: to get more fimiliar with Vue and Vuex.
 
 ## Project setup
 ```
@@ -20,5 +24,12 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Setup
+Vuex for state management
+Vuetify for UI components
+Jsonplaceholder for testing API endpoints
+
+## Future work
+- Be able to edit todos
+- Create own backend for api calls
+- Use own database to save todos
