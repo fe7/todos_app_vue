@@ -25,9 +25,9 @@ npm run lint
 ```
 
 ## Setup
-Vuex for state management
-Vuetify for UI components
-Jsonplaceholder for testing API endpoints
+- Vuex for state management
+- Vuetify for UI components
+- Jsonplaceholder for testing API endpoints
 
 ## Future work
 - Be able to edit todos
