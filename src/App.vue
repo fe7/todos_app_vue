@@ -16,7 +16,6 @@
     <v-content>
 
       <AddTodoComponent/>
-      <!-- <FilterTodos/> -->
       <Todos/>
     </v-content>
   </v-app>
@@ -25,7 +24,6 @@
 <script>
 import Todos from "./components/Todos.vue";
 import AddTodoComponent from "./components/AddTodo.vue";
-// import FilterTodos from "./components/FilterTodos.vue";
 
 export default {
   name: 'App',
@@ -33,7 +31,6 @@ export default {
   components: {
     Todos,
     AddTodoComponent
-    // FilterTodos
   },
 
   data: () => ({
