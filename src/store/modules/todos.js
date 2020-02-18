@@ -15,28 +15,28 @@ const actions = {
         const response = await Axios.get(url.concat('?_limit=10'));
         commit('setTodos', response.data);
     },
-    async addTodo ({ commit }, title){
+    async addTodo({ commit }, title) {
         console.log(title);
         const response = await Axios.post(url, { title: title, completed: false });
-        commit ('newTodo', response.data)
+        commit('newTodo', response.data)
     },
-    async deleteTodo({commit}, id){
-        await Axios.delete(url.concat('/',id));
+    async deleteTodo({ commit }, id) {
+        await Axios.delete(url.concat('/', id));
         // if failes trycode:  await axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`);
-        commit ('removeTodo', id);
+        commit('removeTodo', id);
     },
     async filterTodos({ commit }, e) {
         // Get selected number
         const limit = parseInt(e.target.options[e.target.options.selectedIndex].innerText);
         const response = await Axios.get(`https://jsonplaceholder.typicode.com/todos?_limit=${limit}`);
         commit('setTodos', response.data);
-      },
-      async updateTodo({ commit }, updTodo) {
+    },
+    async updateTodo({ commit }, updTodo) {
         console.log(updTodo);
         const response = await Axios.put(`https://jsonplaceholder.typicode.com/todos/${updTodo.id}`, updTodo);
         console.log(response.data);
         commit('updateTodo', response.data);
-      }
+    }
 };
 
 const mutations = {
