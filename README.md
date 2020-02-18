@@ -31,5 +31,5 @@ Jsonplaceholder for testing API endpoints
 
 ## Future work
 - Be able to edit todos
-- Create own backend for api calls
+- Create and use own backend for api calls
 - Use own database to save todos
