@@ -1,4 +1,4 @@
-# todo app
+# Todos app
 
 Add todos, and delete them.
 
