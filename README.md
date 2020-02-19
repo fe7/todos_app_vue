@@ -4,7 +4,7 @@ Add todos, and delete them.
 
 Aim for this project: to get more fimiliar with Vue and Vuex.
 
-Inspired by [vuex_todo_manager](https://github.com/bradtraversy/vuex_todo_manager)
+Based on [vuex_todo_manager](https://github.com/bradtraversy/vuex_todo_manager)
 
 ## Project setup
 ```
