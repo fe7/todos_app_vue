@@ -7,31 +7,41 @@ Aim for this project: to get more fimiliar with Vue and Vuex.
 Based on [vuex_todo_manager](https://github.com/bradtraversy/vuex_todo_manager)
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
 
 ## Setup
+
 - Vuex for state management
 - Vuetify for UI components
 - Jsonplaceholder for testing API endpoints
 
 ## Future work
+
 - Be able to edit todos
 - Create and use own backend for api calls
 - Use own database to save todos
+
+## CORS error on chrome
+
+Just open in firefox
